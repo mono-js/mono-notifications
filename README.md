@@ -122,6 +122,3 @@ const notifications = await monoNotification.list('59c0de2dfe8fa448605b1d89', { 
 const notifications = await monoNotification.list('59c0de2dfe8fa448605b1d89', { read: true })
 ```
 
-
-
-
