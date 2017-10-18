@@ -46,7 +46,7 @@ Query params:
 ### add
 
 ```js
-add(userId = string || ObjectID, payload = object): Promise<doc>
+add(userId = string || ObjectID, payload = object): Promise<void>
 ```
 
 Insert a new notification for a specific userId with a specific payload
@@ -62,7 +62,7 @@ const notification = monoNotification.add('59c0de2dfe8fa448605b1d89', {
 ### count
 
 ```js
-count(userId = string || ObjectID, read = boolean)
+count(userId = string || ObjectID, read = boolean): Promise<Number>
 ```
 
 Return the number of notifications (all, read or unread) for a specific userId
@@ -85,7 +85,7 @@ const notifications = monoNotification.count('59c0de2dfe8fa448605b1d89', true)
 ### read
 
 ```js
-read(userId = string || ObjectID, notificationsId = string || Array<string>): Promise<result>
+read(userId = string || ObjectID, notificationsId = string || Array<string>): Promise<void>
 ```
 
 Set a notification or a list of notifications as read
