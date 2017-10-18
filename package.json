@@ -1,0 +1,56 @@
+{
+  "name": "mono-notifications",
+  "version": "0.1.0",
+  "description": "Utils for mongodb for nodejs",
+  "main": "lib/",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "lint": "eslint 'lib/*.js'",
+    "test": "npm run lint && nyc ava --verbose --serial test/ && nyc report --reporter=html",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "preversion": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/terrajs/mongodb-utils.git"
+  },
+  "nyc": {
+    "include": [
+      "lib/"
+    ]
+  },
+  "contributors": [
+    {
+      "name": "Sebastien Chopin (@Atinux)"
+    },
+    {
+      "name": "Benjamin Canac (@benjamincanac)"
+    },
+    {
+      "name": "Gaetan SENN (@gaetansenn)"
+    }
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "mongodb": "^2.2.31"
+  },
+  "devDependencies": {
+    "@terrajs/mono": "^0.4.11",
+    "mono-mongodb": "^2.2.0",
+    "mono-test-utils": "^1.0.4",
+    "ava": "^0.22.0",
+    "codecov": "^2.3.1",
+    "eslint": "^4.9.0",
+    "mongodb": "^2.2.33",
+    "nyc": "^11.1.0",
+    "rimraf": "^2.6.1",
+    "std-mocks": "^1.0.1"
+  },
+  "keywords": [],
+  "dependencies": {
+    "mongodb-utils": "^1.1.0",
+    "ms": "^2.0.0"
+  }
+}
