@@ -18,7 +18,7 @@ npm install --save mono-notifications
 Mono notifications library manage your users feed notifications
 
 ```js
-//Control the notification workflow (create, setAsRead, list)
+//Control the notifications workflow (create, read, count, list)
 const monoNotification = require('mono-notifications')
 ```
 
