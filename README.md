@@ -1,8 +1,8 @@
-# mono-notifications
+<h1 align="center"><img src="https://user-images.githubusercontent.com/904724/31862666-e55f5998-b741-11e7-922f-c3e5b575e8f9.png" width="350" alt="Mono"/></h1>
 
-Mono notifications library for node
+> Notifications module for [Mono](https://github.com/terrajs/mono)
 
-[![npm version](https://img.shields.io/npm/v/@terrajs/mono-notifications.svg)](https://www.npmjs.com/package/@terrajs/mono-notifications)
+[![npm version](https://img.shields.io/npm/v/mono-notifications.svg)](https://www.npmjs.com/package/mono-notifications)
 [![Travis](https://img.shields.io/travis/terrajs/mono-notifications/master.svg)](https://travis-ci.org/terrajs/mono-notifications)
 [![Coverage](https://img.shields.io/codecov/c/github/terrajs/mono-notifications/master.svg)](https://codecov.io/gh/terrajs/mono-notifications.js)
 [![license](https://img.shields.io/github/license/terrajs/mono-notifications.svg)](https://github.com/terrajs/mono-notifications/blob/master/LICENSE)
