@@ -1,6 +1,6 @@
 {
   "name": "mono-notifications",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Utils for mongodb for nodejs",
   "main": "lib/",
   "files": [
