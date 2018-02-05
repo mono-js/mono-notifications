@@ -35,7 +35,7 @@ test('Start mono with routes context and create user', async (t) => {
 	const usersModule = mongoUtils(mongoModule.db.collection('users'))
 
 	const user = await usersModule.utils.create(userModel)
-	userModel._id = user._id
+	userModel._id = String(user._id)
 	const accessToken = await jwt.generateJWT({ userId: userModel._id })
 
 	requestHeader = {

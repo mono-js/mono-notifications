@@ -10,7 +10,7 @@ const mongoUtils = require('mongodb-utils')
 const monoNotifications = require('../lib/index')
 
 const userModel = {
-	username: 'neo9-test'
+	username: 'test'
 }
 
 const notificationModel = {
@@ -26,7 +26,7 @@ test.before('Init mono and create user test', async () => {
 	const usersModule = mongoUtils(mongoModule.db.collection('users'))
 
 	const user = await usersModule.utils.create(userModel)
-	userModel._id = user._id
+	userModel._id = String(user._id)
 })
 
 test('monoNotifications.add should create a notification', async (t) => {
