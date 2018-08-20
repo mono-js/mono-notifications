@@ -3,7 +3,7 @@ const { join } = require('path')
 
 const mongoUtils = require('mongodb-utils')
 
-const { jwt } = require('@terrajs/mono')
+const { jwt } = require('mono-core')
 const { start, stop, $get, $put } = require('mono-test-utils')
 const mongoModule = require('mono-mongodb')
 const monoNotifications = require('../lib/index')
